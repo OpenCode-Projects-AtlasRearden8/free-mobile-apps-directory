@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "methodology": {
+    "policy": "Every app listed here must be genuinely usable on its free tier: not a 3-day trial, not a crippled demo, not an app that took your money in year one and now demands rent. Ads may exist on a free tier if the core features still work; paywalls that block the app's core purpose do not.",
+    "verifiedFreeOn": "The date we last actively checked that the free tier still behaves as described, using the apps own store listing and documentation.",
+    "recheckOn": "When we plan to verify again. Cards with recheck dates in the past are marked NEEDS RECHECK on the site.",
+    "linkTests": "Every link on every card is tested (HTTP status checked) by scripts/test.js. Broken links are removed or fixed, never silently left.",
+    "editorial": "No ads, no affiliate links, no paid placement, no sponsored picks. Apps are listed because the free tier holds up, full stop. No personal data is collected by this site: it is static HTML with no analytics, no cookies, no accounts."
+  },
+  "apps": [
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "category": "Note-takers",
+      "platforms": ["Android", "iOS"],
+      "summary": "Open-source, offline-first notes with notebooks, tags, and optional end-to-end-free sync through Dropbox, OneDrive, WebDAV, or Joplin Cloud.",
+      "freeTier": "Unlimited notes and notebooks, markdown editing, attachments, tags, search, and sync with your own cloud storage (Dropbox, OneDrive, Nextcloud, WebDAV). No note limits, no device limits.",
+      "limits": "Joplin Cloud's own hosted sync (larger attachments, easier setup, publishing) is a paid extra, but you never need it to get full sync for free.",
+      "paid": "Optional: Joplin Cloud subscription for hosted sync. The app itself and self-managed sync are free forever.",
+      "ads": "No ads at all.",
+      "permissions": "Storage/files access to manage note attachments; network for sync. It should not ask for contacts, location, or your camera.",
+      "privacyNote": "Notes stay on your device unless you configure sync. Open source (AGPL/communities) so behavior is auditable.",
+      "links": {
+        "site": "https://joplinapp.org",
+        "github": "https://github.com/laurent22/joplin"
+      },
+      "verifiedFreeOn": "2026-10-22",
+      "recheckOn": "2027-01-22",
+      "tags": ["open source", "offline", "no account required"]
+    },
+    {
+      "id": "standard-notes",
+      "name": "Standard Notes",
+      "category": "Note-takers",
+      "platforms": ["Android", "iOS"],
+      "summary": "Encrypted notes app where the free tier already includes end-to-end encryption and unlimited plain notes across all your devices.",
+      "freeTier": "Unlimited notes on unlimited devices, end-to-end encryption, offline use, free syncing with a Standard Notes account.",
+      "limits": "Free tier uses the plain-text/markdown editor only. Rich markdown extensions, themes, and version history beyond 7 days are paid upgrades.",
+      "paid": "Product Features subscription adds extended editors and longer versioning. Notes themselves are never metered.",
+      "ads": "No ads at all.",
+      "permissions": "Minimal: network for sync, storage for backups. No contacts or location.",
+      "privacyNote": "Private by default: encryption happens on-device before anything leaves your phone.",
+      "links": {
+        "site": "https://standardnotes.com",
+        "github": "https://github.com/standardnotes/app"
+      },
+      "verifiedFreeOn": "2026-10-22",
+      "recheckOn": "2027-01-22",
+      "tags": ["open source", "offline", "encryption"]
+    },
+    {
+      "id": "google-keep",
+      "name": "Google Keep",
+      "category": "Note-takers",
+      "platforms": ["Android", "iOS"],
+      "summary": "Fast, colorful sticky notes, lists, and reminders that sync everywhere. The simple, everyone-already-has-it option.",
+      "freeTier": "Unlimited notes, checklists, photo notes, voice notes, reminders, and collaborative lists. Syncs free with your Google account and works on the web.",
+      "limits": "Not for long documents: notes are short-form by design. Partners with your Google account (so it is tied to Google).",
+      "paid": "Nothing. There is no paid Keep tier.",
+      "ads": "No ads inside Keep.",
+      "permissions": "Microphone for voice notes, camera for photo notes, storage for attachments, network. Location only if you add location reminders (optional; deny at will).",
+      "privacyNote": "Data lives on Googles servers per your account settings. Fine for shopping lists, not for secrets.",
+      "links": {
+        "site": "https://keep.google.com",
+        "playstore": "https://play.google.com/store/apps/details?id=com.google.android.keep"
+      },
+      "verifiedFreeOn": "2026-10-24",
+      "recheckOn": "2027-01-24",
+      "tags": ["no account required", "sync"]
+    },
+    {
+      "id": "simplenote",
+      "name": "Simplenote",
+      "category": "Note-takers",
+      "platforms": ["Android", "iOS"],
+      "summary": "Plain, fast notes that sync everywhere. No upsell screens, no locked features, no nagging. Exactly what it says on the tin.",
+      "freeTier": "Literally everything: unlimited notes, unlimited device sync, tagging, revisions, markdown, sharing, collaboration. Free with an Automattic account.",
+      "limits": "None that matter. No length or count limits on the free tier.",
+      "paid": "Nothing. Simplenote has no paid tier for personal use.",
+      "ads": "No ads at all.",
+      "permissions": "Network for sync, storage for note backups. Minimal.",
+      "privacyNote": "Backed by Automattic (WordPress folks). Notes sync unencrypted-at-rest to their servers, but the app is open source and the privacy policy is genuinely plain-English.",
+      "links": {
+        "site": "https://simplenote.com",
+        "github": "https://github.com/Automattic/simplenote-android"
+      },
+      "verifiedFreeOn": "2026-10-24",
+      "recheckOn": "2027-01-24",
+      "tags": ["open source", "sync"]
+    },
+    {
+      "id": "obsidian-mobile",
+      "name": "Obsidian",
+      "category": "Note-takers",
+      "platforms": ["Android", "iOS"],
+      "summary": "Local markdown notes with backlinks and a knowledge-graph view. Your notes are plain files you own.",
+      "freeTier": "The full mobile app: unlimited notes, backlinks, graph, community plugin support, sync via your own file storage (iCloud on iOS, sync adapters on Android). Free for personal use.",
+      "limits": "Obsidian Sync (their custodian service) is paid. Commercial use is technically not free, but personal use is and stays free.",
+      "paid": "Optional paid services: Obsidian Sync and Publish. The editor is free and offline.",
+      "ads": "No ads at all.",
+      "permissions": "Storage/files access for your vault. No contacts, no location.",
+      "privacyNote": "Local-first: your vault is a folder of plain markdown files. The app does not phone home with your content.",
+      "links": {
+        "site": "https://obsidian.md"
+      },
+      "verifiedFreeOn": "2026-10-25",
+      "recheckOn": "2027-01-25",
+      "tags": ["offline", "no account required"]
+    },
+    {
+      "id": "onenote",
+      "name": "Microsoft OneNote",
+      "category": "Note-takers",
+      "platforms": ["Android", "iOS"],
+      "summary": "Free-form digital notebooks with sections, pages, and handwriting. The heavyweight note app, for free.",
+      "freeTier": "Full app with no feature lock: notebooks, sections, inking, audio notes, web clipper, sync across devices with a free Microsoft account.",
+      "limits": "Storage comes from OneDrive (5 GB free historically). No metered note limits.",
+      "paid": "Optional Microsoft 365 for extra OneDrive space and Office extras; not needed for OneNote itself.",
+      "ads": "No ads inside OneNote.",
+      "permissions": "Microphone (audio notes), camera (scans/photos), storage, network.",
+      "privacyNote": "Tied to a Microsoft account and OneDrive. Local cache exists, but the source of truth is cloud.",
+      "links": {
+        "site": "https://www.microsoft.com/en-us/microsoft-365/onenote",
+        "appstore": "https://apps.apple.com/us/app/microsoft-onenote/id410395246"
+      },
+      "verifiedFreeOn": "2026-10-25",
+      "recheckOn": "2027-01-25",
+      "tags": ["sync", "no account required"]
+    },
+    {
+      "id": "drive-scan",
+      "name": "Google Drive's built-in scanner",
+      "category": "Scanners",
+      "platforms": ["Android", "iOS"],
+      "summary": "A surprisingly capable scanner hiding inside the free Google Drive app: point your camera at paper, get a clean multi-page PDF.",
+      "freeTier": "Unlimited scans with edge detection and color modes, multi-page PDFs, and free storage in Drive. No watermark, no scan-count cap, no upsell, no ads.",
+      "limits": "Tied to your Google account (which most people already have). Scans consume shared Drive storage (15 GB free historically, plenty for PDFs).",
+      "paid": "Nothing for scanning. Only if you need more Drive storage overall does Google One enter the picture.",
+      "ads": "No ads at all.",
+      "permissions": "Camera (to scan), storage (attachments), network (Drive sync).",
+      "privacyNote": "Scans land in your own Google Drive. No third party involved beyond Google itself, which you already implicitly use with that account.",
+      "links": {
+        "site": "https://workspace.google.com/products/drive/",
+        "playstore": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs"
+      },
+      "verifiedFreeOn": "2026-10-22",
+      "recheckOn": "2027-01-22",
+      "tags": ["no account required", "offline"]
+    },
+    {
+      "id": "adobe-scan",
+      "name": "Adobe Scan",
+      "category": "Scanners",
+      "platforms": ["Android", "iOS"],
+      "summary": "Clean automatic document scanning with free built-in OCR that makes PDFs searchable.",
+      "freeTier": "Unlimited scans, automatic edge detection and cleanup, OCR on scans, export to PDF. Free with an Adobe account.",
+      "limits": "Requires an Adobe account (free) before it will show scans. Deeper editing (rearranging, merging beyond basics, premium OCR) leans on a subscription.",
+      "paid": "Paid tier exists in Adobe ecosystem; core scanning + basic OCR stays free.",
+      "ads": "No ads inside the scanner itself.",
+      "permissions": "Camera, storage. Network for syncing to Adobe cloud.",
+      "privacyNote": "Scans sync to Adobe Document Cloud by default. You can turn off the automatic sync in settings, but this is the most cloud-bound scanner on this list.",
+      "links": {
+        "site": "https://www.adobe.com/acrobat/mobile/scanner-app.html",
+        "playstore": "https://play.google.com/store/apps/details?id=com.adobe.scan.android"
+      },
+      "verifiedFreeOn": "2026-10-23",
+      "recheckOn": "2027-01-23",
+      "tags": ["encryption"]
+    },
+    {
+      "id": "genius-scan",
+      "name": "Genius Scan",
+      "category": "Scanners",
+      "platforms": ["Android", "iOS"],
+      "summary": "Fast, accurate scanning with great batch mode. Free version is real and usable; paid tier mostly adds advanced exports.",
+      "freeTier": "Unlimited single-page scans, edge detection, auto-enhance, export as image or single PDF. Tagging and smart names included.",
+      "limits": "Free tier shows a watermark on exports for some features, and batch/multi-page plus OCR are part of Genius Scan Ultra / Pro upgrade.",
+      "paid": "One-time or subscription upgrade; not required to scan and share documents.",
+      "ads": "A few ads in the free tier; not intrusive at the scanning flow itself.",
+      "permissions": "Camera, storage. Optional network (for cloud export if you choose).",
+      "privacyNote": "Can run without any account; scans stay local unless you export.",
+      "links": {
+        "site": "https://www.thegrizzlylabs.com/genius-scan"
+      },
+      "verifiedFreeOn": "2026-10-23",
+      "recheckOn": "2027-01-23",
+      "tags": ["offline"]
+    },
+    {
+      "id": "insight-timer",
+      "name": "Insight Timer",
+      "category": "Sleep sounds",
+      "platforms": ["Android", "iOS"],
+      "summary": "Thousands of genuinely free meditations, sleep music tracks, soundscapes, and a beloved custom timer. The rare big-name app with a real free tier.",
+      "freeTier": "Thousands of free guided meditations, endless free music/sleep tracks, sleep meditations and ambient soundscapes, a customizable meditation timer, community groups, and stats. 100+ new free tracks added daily.",
+      "limits": "Paid courses (1,000+) and offline listening are behind the optional Premium subscription. The free library is not a trial and never expires.",
+      "paid": "Insight Premium subscription: courses, offline playback, advanced player. Optional.",
+      "ads": "No third-party ad network; occasional spots promoting Insight Timer's own courses.",
+      "permissions": "Network, notifications (session reminders), audio. No contacts or location.",
+      "privacyNote": "Optional account; listen without one for basic timer use. Data safety declaration on Play says data is encrypted in transit and deletable on request.",
+      "links": {
+        "site": "https://insighttimer.com",
+        "playstore": "https://play.google.com/store/apps/details?id=com.spotlightsix.zentimerlite2"
+      },
+      "verifiedFreeOn": "2026-10-26",
+      "recheckOn": "2027-01-26",
+      "tags": ["no account required", "sync"]
+    },
+    {
+      "id": "rain-rain",
+      "name": "Rain, Rain Sleep Sounds",
+      "category": "Sleep sounds",
+      "platforms": ["Android", "iOS"],
+      "summary": "Tons of high-quality rain, nature, and ambient loops you can mix into your own sleep soundscape.",
+      "freeTier": "50+ HD sounds free with no playback-time limits, the full mixer, oscillator, soften controls, fade-out timer, and bedtime reminder. Wrote the book on decent free tiers.",
+      "limits": "Premium sounds (~60 more) are subscription-only; a small static banner ad sits at the bottom.",
+      "paid": "Rain Rain Premium subscription for extra sounds and an ad-free experience.",
+      "ads": "Small image banner in free tier; no audio/video ads.",
+      "permissions": "Audio, notifications (for alarm/timer). Storage in some versions for custom sound imports.",
+      "privacyNote": "Works offline once sounds are downloaded. No account required.",
+      "links": {
+        "site": "https://www.rainrainapp.com",
+        "playstore": "https://play.google.com/store/apps/details?id=com.timgostony.rainrain"
+      },
+      "verifiedFreeOn": "2026-10-26",
+      "recheckOn": "2027-01-26",
+      "tags": ["offline", "no account required"]
+    },
+    {
+      "id": "white-noise-lite",
+      "name": "White Noise Lite",
+      "category": "Sleep sounds",
+      "platforms": ["Android", "iOS"],
+      "summary": "Classic white/brown/pink noise plus ambient loops. The free 'Lite' edition is a real, working sound machine.",
+      "freeTier": "40+ sounds in Lite, mixing, timer, alarm, background playing. Plain and straightforward.",
+      "limits": "Lite has a subset of the full catalog and shows ads. Paid full version unlocks the whole catalog and extras.",
+      "paid": "Paid White Noise (one-time style) removes ads and unlocks catalog.",
+      "ads": "Ads present in Lite.",
+      "permissions": "Audio, notifications, storage for custom sounds.",
+      "privacyNote": "Works offline; no account needed.",
+      "links": {
+        "site": "https://www.tmsoft.com/white-noise/"
+      },
+      "verifiedFreeOn": "2026-10-26",
+      "recheckOn": "2027-01-26",
+      "tags": ["offline", "no account required"]
+    },
+    {
+      "id": "google-fit",
+      "name": "Google Fit",
+      "category": "Step counters",
+      "platforms": ["Android", "iOS"],
+      "summary": "Googles free activity tracker. Counts steps and Heart Points with no subscription attached.",
+      "freeTier": "Step counting, distance, active time, Heart Points goals, workout logging, and syncing with health platforms. No ads.",
+      "limits": "Tracks phone-sensor steps automatically; smartwatch depth depends on connected devices. No premium tier to bait you.",
+      "paid": "Nothing. Google Fit is free with no upsell inside.",
+      "ads": "No ads at all.",
+      "permissions": "Activity recognition (steps), sensors, notifications. Location only if you map workouts (optional).",
+      "privacyNote": "Data is in your Google account. Manage at Google Privacy Dashboard.",
+      "links": {
+        "site": "https://www.google.com/fit/"
+      },
+      "verifiedFreeOn": "2026-10-27",
+      "recheckOn": "2027-01-27",
+      "tags": ["no account required", "sync"]
+    },
+    {
+      "id": "samsung-health",
+      "name": "Samsung Health",
+      "category": "Step counters",
+      "platforms": ["Android", "iOS"],
+      "summary": "Full-featured activity, sleep, and step tracker that ships on Samsung phones and is free on iPhone too.",
+      "freeTier": "Steps, sleep (on supported devices), activity logs, challenges, heart-rate trends where hardware allows. No subscription.",
+      "limits": "Some advanced features (body composition, ECG) only work on specific Samsung wearables.",
+      "paid": "Nothing for tracking. Samsung Health is free with no premium tier.",
+      "ads": "No ads at all.",
+      "permissions": "Activity recognition, sensors, storage. Location optional for runs.",
+      "privacyNote": "Runs on-device plus Samsung cloud sync if you enable it. No third-party ad network involved.",
+      "links": {
+        "site": "https://www.samsung.com/us/apps/samsung-health/"
+      },
+      "verifiedFreeOn": "2026-10-27",
+      "recheckOn": "2027-01-27",
+      "tags": ["no account required"]
+    },
+    {
+      "id": "pacer",
+      "name": "Pacer",
+      "category": "Step counters",
+      "platforms": ["Android", "iOS"],
+      "summary": "Friendly pedometer that works off your phones sensors with simple history charts. Good free baseline.",
+      "freeTier": "Automatic step counting, daily goals, history, basic activity tracking, group challenges. Fully usable.",
+      "limits": "Premium adds deeper analytics, custom plans, and removes ads.",
+      "paid": "Pacer Premium subscription for advanced features.",
+      "ads": "Ads present in free tier.",
+      "permissions": "Activity recognition, sensors, optional location for walks, optional health-app integration.",
+      "privacyNote": "Account optional for casual counting; data not sold on free tier per policy.",
+      "links": {
+        "site": "https://www.mypacer.com"
+      },
+      "verifiedFreeOn": "2026-10-28",
+      "recheckOn": "2027-01-28",
+      "tags": ["no account required"]
+    },
+    {
+      "id": "goodbudget",
+      "name": "Goodbudget",
+      "category": "Budgeting",
+      "platforms": ["Android", "iOS"],
+      "summary": "Envelope budgeting done gently. The free tier is usable on its own.",
+      "freeTier": "An ad-free 'Free Forever' version: 10 regular envelopes plus 10 annual envelopes, envelope history, envelope budgeting across a couple of devices, and spending reports.",
+      "limits": "Free tier caps envelopes and history length. Premium unlocks unlimited envelopes, up to 5 devices, multi-year history, bank importing, and CSV exports.",
+      "paid": "Plus/Unlimited subscription tiers.",
+      "ads": "No ads at all in either tier.",
+      "permissions": "Network (sync), notifications. No contacts or location on free tier.",
+      "privacyNote": "Account required (envelope budgets sync); data sits on Goodbudgets cloud. Manual entry, no bank scraping on free tier.",
+      "links": {
+        "site": "https://goodbudget.com",
+        "playstore": "https://play.google.com/store/apps/details?id=com.dayspringtech.envelopes"
+      },
+      "verifiedFreeOn": "2026-10-29",
+      "recheckOn": "2027-01-29",
+      "tags": ["sync", "budgeting"]
+    },
+    {
+      "id": "money-manager-realbyte",
+      "name": "Money Manager",
+      "category": "Budgeting",
+      "platforms": ["Android", "iOS"],
+      "summary": "Straightforward double-entry bookkeeping app with instant charts. No account needed: data lives on your phone.",
+      "freeTier": "The real deal but ad-supported: unlimited transactions, budgets, categorization, instant stats/charts, and Excel backup/restore. Assets are capped at 15 on free, which is ample for personal use.",
+      "limits": "Ads on the free tier; over 15 assets, PC editing-view, and ad removal require the paid version.",
+      "paid": "A one-time paid version exists for ad removal and unlimited assets.",
+      "ads": "Ads present in free tier.",
+      "permissions": "Storage for backups. No account, no contacts, no location.",
+      "privacyNote": "Local-first: your ledger stays in the app unless you export a backup. A good pick if you are avoiding linked bank accounts.",
+      "links": {
+        "site": "https://www.realbyteapps.com",
+        "playstore": "https://play.google.com/store/apps/details?id=com.realbyteapps.moneymanagerfree"
+      },
+      "verifiedFreeOn": "2026-10-29",
+      "recheckOn": "2027-01-29",
+      "tags": ["offline", "no account required", "budgeting"]
+    },
+    {
+      "id": "roll-your-own-spreadsheet",
+      "name": "Your Spreadsheet, as a budget app",
+      "category": "Budgeting",
+      "platforms": ["Android", "iOS", "Web"],
+      "summary": "A plain, unglamorous truth: a simple spreadsheet you control beats any subscription budgeting app. Google Sheets is free and works fine on a phone.",
+      "freeTier": "Unlimited everything. You write the rules; nothing is metered, nothing is boxed in, and there is no reminder screen begging for upgrade.",
+      "limits": "It is your job to keep it going. Slightly more setup than an app, and formulas are yours to maintain.",
+      "paid": "Free with a Google account. A genuinely local, no-account alternative pairing is any markdown or CSV note in your favorite local notes app.",
+      "ads": "No ads inside Sheets.",
+      "permissions": "Storage/files and network for sync, depending on the tool you pair it with.",
+      "privacyNote": "The most private option here if you keep the file local; Google Sheets lives on Googles servers per your account.",
+      "links": {
+        "site": "https://docs.google.com/spreadsheets/"
+      },
+      "verifiedFreeOn": "2026-10-30",
+      "recheckOn": "2027-01-30",
+      "tags": ["offline", "open source", "budgeting"]
+    },
+    {
+      "id": "lichess",
+      "name": "Lichess",
+      "category": "Chess trainers",
+      "platforms": ["Android", "iOS"],
+      "summary": "The gold standard. Free forever, open source, no ads, no paywall: unlimited puzzles and unlimited games.",
+      "freeTier": "Everything. Unlimited tactics puzzles, opening and endgame trainers, vs. computer, broadcast, analysis. The website runs on donations.",
+      "limits": "None. (Contrast: other chess sites paywall puzzles and lessons. Lichess does not.)",
+      "paid": "Lichess has no premium tier. Voluntary donations support the project.",
+      "ads": "No ads at all.",
+      "permissions": "Network, notifications (for game invites). Minimal.",
+      "privacyNote": "Open source and auditable. No ads means no ad trackers.",
+      "links": {
+        "site": "https://lichess.org",
+        "github": "https://github.com/lichess-org/lila"
+      },
+      "verifiedFreeOn": "2026-10-22",
+      "recheckOn": "2027-01-22",
+      "tags": ["open source", "no account required", "chess"]
+    },
+    {
+      "id": "chess-com",
+      "name": "Chess.com",
+      "category": "Chess trainers",
+      "platforms": ["Android", "iOS"],
+      "summary": "The biggest name in online chess with solid free play, plus lessons and bots.",
+      "freeTier": "Unlimited live games, bots, basic lessons, open Explorer access, and (as of recent checks) a limited number of free tactics puzzles/day. Community and content are great.",
+      "limits": "Puzzles, lessons, and game review are capped on free. Diamond/Premium opens those up.",
+      "paid": "Multiple subscription tiers.",
+      "ads": "Ads in free tier (banners, some interstitials).",
+      "permissions": "Network, notifications. Optional storage.",
+      "privacyNote": "Optional account; ads engine means ad-related tracking present on free tier.",
+      "links": {
+        "site": "https://www.chess.com"
+      },
+      "verifiedFreeOn": "2026-10-23",
+      "recheckOn": "2027-01-23",
+      "tags": ["chess"]
+    },
+    {
+      "id": "chessable",
+      "name": "Chessable",
+      "category": "Chess trainers",
+      "platforms": ["Android", "iOS"],
+      "summary": "Spaced-repetition chess study (move-by-move courses) with a genuinely large free course library.",
+      "freeTier": "Hundreds of courses are free, including popular 'Short & Sweet' opening introductions. Full MoveTrainer drills on free courses. A real study tool with no up-front cost.",
+      "limits": "Advanced/mega courses cost money; some features (deep variations) per-course. Mostly a course-grade paid add-on.",
+      "paid": "Per-course purchases and Pro subscription.",
+      "ads": "No ads inside the study experience.",
+      "permissions": "Network (course sync), notifications. Storage cache.",
+      "privacyNote": "Chess.com-affiliated; account required to save course progress.",
+      "links": {
+        "site": "https://www.chessable.com"
+      },
+      "verifiedFreeOn": "2026-10-23",
+      "recheckOn": "2027-01-23",
+      "tags": ["chess", "free courses"]
+    }
+  ]
+}

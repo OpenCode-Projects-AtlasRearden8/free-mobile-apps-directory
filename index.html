@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free forever mobile apps &mdash; a plain-English directory</title>
+  <meta name="description" content="A directory of genuinely free mobile apps (note-takers, scanners, sleep sounds, step counters, budgeting, chess trainers) that stay free - with what each free tier really includes, permission notes, and a verified-free-on date. No ads, no paid placement, no trackers.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <h1>Free Forever: Mobile Apps That Actually Stay Free</h1>
+  <p class="tagline">Note-takers &#183; scanners &#183; sleep sounds &#183; step counters &#183; budgeting &#183; chess trainers</p>
+  <p class="pledge">
+    Every app here is genuinely usable on its free tier &mdash; no countdown trials, no crippled
+    demos, no bait-and-switch links. Cards state exactly what the free tier includes, what
+    permissions an app asks for, and the date its free status was last verified, with a
+    recheck-date on every card. This site has <strong>no ads, no paid placement, and no
+    affiliate links</strong>, and it collects <strong>no personal data</strong> (static HTML,
+    no cookies, no accounts, no analytics).
+  </p>
+  <div id="recheck-banner" class="recheck-banner" hidden></div>
+</header>
+
+<section class="controls">
+  <div class="row">
+    <select id="category" aria-label="Filter by category"></select>
+    <select id="platform" aria-label="Filter by platform"></select>
+    <select id="tag" aria-label="Filter by tag"></select>
+    <input type="search" id="query" placeholder="Search free tiers, permissions, notes..." aria-label="Search apps">
+    <select id="sort" aria-label="Sort order">
+      <option value="name">Sort: name</option>
+      <option value="category">Sort: category</option>
+      <option value="recheckOn">Sort: next recheck</option>
+      <option value="verifiedFreeOn">Sort: verified date</option>
+    </select>
+    <button id="clear" type="button">Clear filters</button>
+  </div>
+  <p class="count" id="count" aria-live="polite"></p>
+</section>
+
+<main id="cards" aria-live="polite">
+  <p class="empty">Loading cards...</p>
+</main>
+
+<footer class="site">
+  <p>
+    Built as a static directory of JSON data cards (see <code>data/apps.json</code>).
+    Link policy: every external link is tested by <code>scripts/test.js</code>; broken
+    links get fixed or removed, never left rotting.
+  </p>
+  <p>
+    &copy; 2026 <a href="https://dylanasdale.github.io">Asdale Dynamics, LLC</a> &#183;
+    MIT License &#183; No tracking, no selling, no sponsored picks.
+  </p>
+</footer>
+
+<script src="assets/lib.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
